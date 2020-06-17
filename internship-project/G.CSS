@@ -1,0 +1,32 @@
+body{
+    margin-top: 3rem;
+}
+.coltop{
+    background-color: #cc6699;
+}
+h1{
+    font-size: 1.6rm;
+    text-transform: uppercase;
+    text-decoration:underline;
+    text-align: center;
+    background-color: #cc6699;
+}
+
+.bg-light{
+    background-color: #eeeeee!important;
+}
+.figure-caption{
+    font-size: 90%;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.img-thumbnail{
+    padding: .5rem;
+    border: 2px solid #497cb0;
+    border-radius: 0;
+    background-color:#ffd6e0;
+}
+img{
+    width: 18rem;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOTSTRAP</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-4-lg" style="margin: 2rem;">
+                <div class="card" style="width:18rem;">
+                    <img src="img1 (1).jpg" alt="card one" class="card-img-top">
+                    <div class="card-body">
+                        <h5> photograpy</h5>
+                    <a href="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=andras-vas-Bd7gNnWJBkU-unsplash.jpg" download='https://picsum.photos/id/0/5616/3744'>
+                            <button class="btn" type="button"> download</button>
+                    </a> 
+                </div>
+            </div>
+            <div class="col-4-lg"style="margin: 2rem;">
+                <div class="card" style="width:18rem;">
+                    <img src="img1 (2).jpg" alt="card one" class="card-img-top">
+                    <div class="card-body">
+                        <h5> photograpy</h5>
+                        <a href="https://images.unsplash.com/photo-1557189750-56d1be9e963a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=todd-jiang-1i56Zf5kd1c-unsplash.jpg" download='https://picsum.photos/id/0/5616/3744'>
+                            <button class="btn" type="button">download</button>
+                        </a> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-4-lg"style="margin: 2rem;">
+                <div class="card" style="width:18rem;">
+                    <img src="img1 (3).jpg" alt="card one" class="card-img-top">
+                    <div class="card-body">
+                        <h5> photograpy</h5>
+                        <a href="https://images.unsplash.com/photo-1517059224940-d4af9eec41b7?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=jessy-smith-zFOm6KzA-7g-unsplash.jpg" download='https://picsum.photos/id/0/5616/3744'>
+                            <button class="btn" type="button">download</button>
+                        </a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $('.col-4-lg').hover(
+                function(){
+                    $(this).animate({
+                        marginTop: "-=1%",
+                    },200);
+                },
+                function(){
+                    $(this).animate({
+                        marginTop: "0%",
+                    },200);
+                }
+
+            );
+        });
+    </script>   
+    
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

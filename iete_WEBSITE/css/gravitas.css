@@ -1,0 +1,150 @@
+a{
+    text-decoration: none;
+    color: var(--text-gray);
+
+}
+
+body{
+     background:#D3EAF2 ;
+}
+#loading{
+    width:100%;
+    height:100vh;
+    background: #000
+    url('https://media.giphy.com/media/IwSG1QKOwDjQk/giphy.gif') 
+    no-repeat center; 
+    z-index:99999;
+
+}
+.contents1{
+    width: 80%;
+    margin: auto;
+    background: white;
+    border: 3px solid black;
+}
+.flex-row{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+
+/*------------navigation bar--------------*/
+.nav img{
+    height:15vh;
+}
+.nav{
+    background-color: white;
+    padding: 0.2rem;
+    min-height: 10vh;
+}
+.nav .nav-menu{
+    justify-content: space-around;
+}
+.nav .name{
+    font-size:1.5rem;
+}
+/*-----X-------navigation bar--------X------*/
+
+
+/*------------SiteContent-----------------------*/
+.container{
+    padding:0.3rem;
+    margin: auto;
+}
+main {
+    display: grid;
+    padding-right:5rem;
+    margin:auto;
+    grid-template-columns:70%;
+    justify-content:center;
+    
+    
+}
+main .event{
+    width:100%;
+    padding:5%;
+    border:5px;
+    border-style: solid;
+    border-color:#C1CDD1  ;
+    margin-bottom:3rem;
+    justify-content:center;
+
+}
+.post-title{
+    padding: 1rem 2rem;
+    text-align:center;
+}
+main .event .des h2{
+    text-align:center;
+}
+main .event > .post-image > div{
+    overflow:hidden;
+
+}
+h2{
+    font-family:sans-serif;
+    color:#AF7AC5 ;
+}
+main .event>.post-image .img{
+    width:90%;
+    border:5px;
+    /*border-style: solid;
+    border-color:#B4E0EF ;*/
+    padding:2rem;
+}
+
+.last{
+    text-align:center;
+}
+button{
+    border:none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    margin:1.8rem;
+    background:linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    align:center;
+}
+
+/*------x-----SiteContent------------x----------*/
+@media only screen and (max-width:760px){
+      main{
+        grid-template-columns:100%;
+        padding:0rem;
+        text-align: center;
+    display: inline-block; 
+    }
+    .contents1{
+        width:100%;
+        border: .3px solid black;
+    }
+    main .event{
+    width:100%;
+    padding:0;
+    border:0;
+    border-style: solid;
+    border-color: black;
+    margin-bottom:3rem;
+    }
+    main .event>.post-image .img{
+    padding:0rem;
+    border-color: violet;
+    }
+}
+@media only screen and (max-width:1400px)
+{
+    main .event>.post-image .img{
+    padding:1rem;
+    border-color: violet;
+    }
+}
+@media only screen and (max-width:800px)
+{
+    main .event>.post-image .img{
+    padding:.5rem;
+    border-color: violet;
+    }
+    .contents1{
+            width:100%;
+            border: .3px solid black;
+    }
+}
